@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="icon" href="./img/icon.png">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">VENDOR REGISTRATION FORM</h1>
+
+        <!-- basic company data secion -->
+        <div class="companyData">
+            <h3>Basic Company Data</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="companyName">Company Name</label>
+                        <input type="text" class="form-control" id="companyName"
+                            placeholder="Your company Name, e.g. 2I INFOSY NIGERIA LIMITED">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="companyOwnership">Company Ownership Type</label>
+                        <select name="" class="selectpicker form-control" data-live-search="true" id="companyOwnership"
+                            title="Select One">
+                            <option value="">hello</option>
+                            <option value="">yes</option>
+                            <option value="">bun</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="rcNumber">RC Number</label>
+                        <input type="number" class="form-control" id="rcNumber" placeholder="Only number! Example, 976541">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="tinNumber">Tax Identification Number (TIN)</label>
+                        <input type="number" class="form-control" id="tinNumber" placeholder="Only number! Example, 12561274-0001">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- company address section -->
+        <div class="companyAddress">
+            <h3 class="mt-5">Company Address</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="streetAddress1">Street Address 1*</label>
+                        <input type="text" class="form-control" id="streetAddress1"
+                            placeholder="# & Address, e.g. 4, Udo Udoma Avenue">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="streetAddress2">Street Address 2</label>
+                        <input type="text" class="form-control" id="streetAddress2"
+                            placeholder="Further description, e.g. Off Abak Road">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="state">State*</label>
+                        <select name="" class="selectpicker form-control" data-live-search="true" id="state"
+                            title="Select from list">
+                            <option value="">hello</option>
+                            <option value="">yes</option>
+                            <option value="">bun</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="lga">Local Government Area*</label>
+                        <select name="" class="selectpicker form-control" data-live-search="true" id="lga" title="Select from list">
+                            <option value="">hello</option>
+                            <option value="">yes</option>
+                            <option value="">bun</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="pmb">Private Mail Box (PMB)</label>
+                        <input type="number" class="form-control" id="pmb" placeholder="Enter number only, e.g. 1020">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="poBox">Post Office Box (PO Box)</label>
+                        <input type="number" class="form-control" id="poBox" placeholder="Enter numbers only, e.g. 44">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="postalCode">Postal/Zip Code-ID</label>
+                        <input type="number" class="form-control" id="postalCode" placeholder="Enter number only, e.g. 540211">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="country">Country*</label>
+                        <select name="" class="selectpicker form-control" data-live-search="true" id="country"
+                            title="Select from list">
+                            <option value="">hello</option>
+                            <option value="">yes</option>
+                            <option value="">bun</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Contact Information section -->
+        <div class="companyContact">
+            <h3 class="mt-5">Company Contact Information</h3>
+            <hr>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="phoneNumber">Office Phone Number*</label>
+                        <input type="number" class="form-control" id="phoneNumber" placeholder="e.g. +2348082303908">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="streetAddress2mobilePhoneNumber">Mobile Phone Number</label>
+                        <input type="number" class="form-control" id="mobilePhoneNumber" placeholder="e.g. +2348082303908">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="mailAddress">e-Mail Address*</label>
+                        <input type="text" class="form-control" id="mailAddress" placeholder="info@bpp.ak.gov.ng">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="altEmailAddress">Alternative e-Mail</label>
+                        <input type="text" class="form-control" id="altEmailAddress" placeholder="zikonggle@gmail.com">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group inputs">
+                        <label for="webAddress">Website Address</label>
+                        <input type="text" class="form-control" id="webAddress" placeholder="e.g. https://www.bpp.ak.gov.ng">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group inputs float-right">
+                        <label for="additionWebAddress">Additional Web Address</label>
+                        <input type="text" class="form-control" id="additionWebAddress"
+                            placeholder="e.g. https://akocds.bpp.ak.gov.ng">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- button section -->
+        <div class="row mt-4">
+            <div class="col-sm-4 mt-3">
+                <button type="button" class="btn light-blue-button btn-block">Save</button>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <button type="button" class="btn btn-primary btn-block">Update</button>
+            </div>
+            <div class="col-sm-4 mt-3">
+                <button type="button" class="btn btn-danger btn-block">Delete</button>
+            </div>
+        </div>  
+    </div>
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> -->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap-select.min.js"></script>
+</html>

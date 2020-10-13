@@ -1,0 +1,68 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #55e659;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f59643), to(#55e659));
+  background-image: linear-gradient(#f59643, #55e659);
+}
+
+.container {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: center;
+}
+
+.inputs {
+  width: 85%;
+}
+
+.light-blue-button {
+  background-color: #85b6e3;
+  color: whitesmoke;
+}
+
+.light-blue-button:hover {
+  background-color: #61a6e7;
+  color: whitesmoke;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+@media (max-width: 768px) {
+  .inputs {
+    width: 100%;
+  }
+  .container {
+    background-image: none;
+  }
+  .companyData {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .companyAddress {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .companyContact {
+    background-image: url(../img/bg-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .inputs {
+    width: 100%;
+  }
+}
