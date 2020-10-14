@@ -12,7 +12,6 @@ const data = async () => {
     if (response.data.Error) {
       return [];
     } else {
-		console.log(response)
 		let option;
 		response.data.forEach((result, i) => {
 			option = document.createElement("option");
