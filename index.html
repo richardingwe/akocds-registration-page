@@ -19,220 +19,222 @@
     <div class="container my-5">
         <h1 class="text-center mb-5">VENDOR REGISTRATION FORM</h1>
 
-        <!-- basic company data secion -->
-        <div class="companyData">
-            <h3>Basic Company Data</h3>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="companyName">Company Name</label>
-                        <input type="text" class="form-control" id="companyName"
-                            placeholder="Your company Name, e.g. 2I INFOSY NIGERIA LIMITED">
+        <form action="/" method="">
+            <!-- basic company data secion -->
+            <div class="companyData">
+                <h3>Basic Company Data</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" class="form-control" id="companyName"
+                                placeholder="Your company Name, e.g. 2I INFOSY NIGERIA LIMITED">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="companyOwnership">Company Ownership Type</label>
+                            <select name="companyOwnership" class="selectpicker form-control" data-live-search="true" id="companyOwnership"
+                                title="Select One">
+                                <option value="Nigerian Owned Company">Nigerian Owned Company</option>
+                                <option value="Nigerian Company Owned By A Foreign Company">Nigerian Company Owned By A Foreign Company</option>
+                                <option value="Foreign Owned Company">Foreign Owned Company</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="companyOwnership">Company Ownership Type</label>
-                        <select name="companyOwnership" class="selectpicker form-control" data-live-search="true" id="companyOwnership"
-                            title="Select One">
-                            <option value="Nigerian Owned Company">Nigerian Owned Company</option>
-                            <option value="Nigerian Company Owned By A Foreign Company">Nigerian Company Owned By A Foreign Company</option>
-                            <option value="Foreign Owned Company">Foreign Owned Company</option>
-                        </select>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="rcNumber">RC Number</label>
+                            <input type="number" class="form-control" id="rcNumber" placeholder="Only number! Example, 976541">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="tinNumber">Tax Identification Number (TIN)</label>
+                            <input type="number" class="form-control" id="tinNumber" placeholder="Only number! Example, 12561274-0001">
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="rcNumber">RC Number</label>
-                        <input type="number" class="form-control" id="rcNumber" placeholder="Only number! Example, 976541">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="tinNumber">Tax Identification Number (TIN)</label>
-                        <input type="number" class="form-control" id="tinNumber" placeholder="Only number! Example, 12561274-0001">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- company address section -->
-        <div class="companyAddress">
-            <h3 class="mt-5">Company Address</h3>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="streetAddress1">Street Address 1*</label>
-                        <input type="text" class="form-control" id="streetAddress1"
-                            placeholder="# & Address, e.g. 4, Udo Udoma Avenue">
+            <!-- company address section -->
+            <div class="companyAddress">
+                <h3 class="mt-5">Company Address</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="streetAddress1">Street Address 1*</label>
+                            <input type="text" class="form-control" id="streetAddress1"
+                                placeholder="# & Address, e.g. 4, Udo Udoma Avenue">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="streetAddress2">Street Address 2</label>
+                            <input type="text" class="form-control" id="streetAddress2"
+                                placeholder="Further description, e.g. Off Abak Road">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="streetAddress2">Street Address 2</label>
-                        <input type="text" class="form-control" id="streetAddress2"
-                            placeholder="Further description, e.g. Off Abak Road">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="state">State*</label>
+                            <select name="" class="selectpicker form-control" data-live-search="true" id="state"
+                                title="Select from list" onchange="toggleLGA(this);">
+                                <option value="Abia">Abia</option>
+                                <option value="Adamawa">Adamawa</option>
+                                <option value="AkwaIbom">AkwaIbom</option>
+                                <option value="Anambra">Anambra</option>
+                                <option value="Bauchi">Bauchi</option>
+                                <option value="Bayelsa">Bayelsa</option>
+                                <option value="Benue">Benue</option>
+                                <option value="Borno">Borno</option>
+                                <option value="CrossRiver">CrossRiver</option>
+                                <option value="Delta">Delta</option>
+                                <option value="Ebonyi">Ebonyi</option>
+                                <option value="Edo">Edo</option>
+                                <option value="Ekiti">Ekiti</option>
+                                <option value="Enugu">Enugu</option>
+                                <option value="FCT">FCT</option>
+                                <option value="Gombe">Gombe</option>
+                                <option value="Imo">Imo</option>
+                                <option value="Jigawa">Jigawa</option>
+                                <option value="Kaduna">Kaduna</option>
+                                <option value="Kano">Kano</option>
+                                <option value="Katsina">Katsina</option>
+                                <option value="Kebbi">Kebbi</option>
+                                <option value="Kogi">Kogi</option>
+                                <option value="Kwara">Kwara</option>
+                                <option value="Lagos">Lagos</option>
+                                <option value="Nasarawa">Nasarawa</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Ogun">Ogun</option>
+                                <option value="Ondo">Ondo</option>
+                                <option value="Osun">Osun</option>
+                                <option value="Oyo">Oyo</option>
+                                <option value="Plateau">Plateau</option>
+                                <option value="Rivers">Rivers</option>
+                                <option value="Sokoto">Sokoto</option>
+                                <option value="Taraba">Taraba</option>
+                                <option value="Yobe">Yobe</option>
+                                <option value="Zamfara">Zamafara</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="lga">Local Government Area*</label>
+                            <select name="" class=" form-control select-lga" data-live-search="true" id="lga" title="Select from list">
+                                <option>Select from list</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="pmb">Private Mail Box (PMB)</label>
+                            <input type="number" class="form-control" id="pmb" placeholder="Enter number only, e.g. 1020">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="poBox">Post Office Box (PO Box)</label>
+                            <input type="number" class="form-control" id="poBox" placeholder="Enter numbers only, e.g. 44">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="postalCode">Postal/Zip Code-ID</label>
+                            <input type="number" class="form-control" id="postalCode" placeholder="Enter number only, e.g. 540211">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="country">Country*</label>
+                            <select name="" class="picker1 form-control" data-live-search="true" id="country"
+                                title="Select from list">
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="state">State*</label>
-                        <select name="" class="selectpicker form-control" data-live-search="true" id="state"
-                            title="Select from list" onchange="toggleLGA(this);">
-                            <option value="Abia">Abia</option>
-                            <option value="Adamawa">Adamawa</option>
-                            <option value="AkwaIbom">AkwaIbom</option>
-                            <option value="Anambra">Anambra</option>
-                            <option value="Bauchi">Bauchi</option>
-                            <option value="Bayelsa">Bayelsa</option>
-                            <option value="Benue">Benue</option>
-                            <option value="Borno">Borno</option>
-                            <option value="CrossRiver">CrossRiver</option>
-                            <option value="Delta">Delta</option>
-                            <option value="Ebonyi">Ebonyi</option>
-                            <option value="Edo">Edo</option>
-                            <option value="Ekiti">Ekiti</option>
-                            <option value="Enugu">Enugu</option>
-                            <option value="FCT">FCT</option>
-                            <option value="Gombe">Gombe</option>
-                            <option value="Imo">Imo</option>
-                            <option value="Jigawa">Jigawa</option>
-                            <option value="Kaduna">Kaduna</option>
-                            <option value="Kano">Kano</option>
-                            <option value="Katsina">Katsina</option>
-                            <option value="Kebbi">Kebbi</option>
-                            <option value="Kogi">Kogi</option>
-                            <option value="Kwara">Kwara</option>
-                            <option value="Lagos">Lagos</option>
-                            <option value="Nasarawa">Nasarawa</option>
-                            <option value="Niger">Niger</option>
-                            <option value="Ogun">Ogun</option>
-                            <option value="Ondo">Ondo</option>
-                            <option value="Osun">Osun</option>
-                            <option value="Oyo">Oyo</option>
-                            <option value="Plateau">Plateau</option>
-                            <option value="Rivers">Rivers</option>
-                            <option value="Sokoto">Sokoto</option>
-                            <option value="Taraba">Taraba</option>
-                            <option value="Yobe">Yobe</option>
-                            <option value="Zamfara">Zamafara</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="lga">Local Government Area*</label>
-                        <select name="" class=" form-control select-lga" data-live-search="true" id="lga" title="Select from list">
-                            <option>Select from list</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="pmb">Private Mail Box (PMB)</label>
-                        <input type="number" class="form-control" id="pmb" placeholder="Enter number only, e.g. 1020">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="poBox">Post Office Box (PO Box)</label>
-                        <input type="number" class="form-control" id="poBox" placeholder="Enter numbers only, e.g. 44">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="postalCode">Postal/Zip Code-ID</label>
-                        <input type="number" class="form-control" id="postalCode" placeholder="Enter number only, e.g. 540211">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="country">Country*</label>
-                        <select name="" class="picker1 form-control" data-live-search="true" id="country"
-                            title="Select from list">
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Company Contact Information section -->
-        <div class="companyContact">
-            <h3 class="mt-5">Company Contact Information</h3>
-            <hr>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="phoneNumber">Office Phone Number*</label>
-                        <input type="number" class="form-control" id="phoneNumber" placeholder="e.g. +2348082303908">
+            <!-- Company Contact Information section -->
+            <div class="companyContact">
+                <h3 class="mt-5">Company Contact Information</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="phoneNumber">Office Phone Number*</label>
+                            <input type="number" class="form-control" id="phoneNumber" placeholder="e.g. +2348082303908">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="streetAddress2mobilePhoneNumber">Mobile Phone Number</label>
+                            <input type="number" class="form-control" id="mobilePhoneNumber" placeholder="e.g. +2348082303908">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="streetAddress2mobilePhoneNumber">Mobile Phone Number</label>
-                        <input type="number" class="form-control" id="mobilePhoneNumber" placeholder="e.g. +2348082303908">
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="mailAddress">e-Mail Address*</label>
+                            <input type="text" class="form-control" id="mailAddress" placeholder="info@bpp.ak.gov.ng">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="altEmailAddress">Alternative e-Mail</label>
+                            <input type="text" class="form-control" id="altEmailAddress" placeholder="zikonggle@gmail.com">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group inputs">
+                            <label for="webAddress">Website Address</label>
+                            <input type="text" class="form-control" id="webAddress" placeholder="e.g. https://www.bpp.ak.gov.ng">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group inputs float-right">
+                            <label for="additionWebAddress">Additional Web Address</label>
+                            <input type="text" class="form-control" id="additionWebAddress"
+                                placeholder="e.g. https://akocds.bpp.ak.gov.ng">
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="mailAddress">e-Mail Address*</label>
-                        <input type="text" class="form-control" id="mailAddress" placeholder="info@bpp.ak.gov.ng">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="altEmailAddress">Alternative e-Mail</label>
-                        <input type="text" class="form-control" id="altEmailAddress" placeholder="zikonggle@gmail.com">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group inputs">
-                        <label for="webAddress">Website Address</label>
-                        <input type="text" class="form-control" id="webAddress" placeholder="e.g. https://www.bpp.ak.gov.ng">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group inputs float-right">
-                        <label for="additionWebAddress">Additional Web Address</label>
-                        <input type="text" class="form-control" id="additionWebAddress"
-                            placeholder="e.g. https://akocds.bpp.ak.gov.ng">
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- button section -->
-        <div class="row mt-4">
-            <div class="col-sm-4 mt-3">
-                <button type="button" class="btn light-blue-button btn-block">Save</button>
-            </div>
-            <div class="col-sm-4 mt-3">
-                <button type="button" class="btn btn-primary btn-block">Update</button>
-            </div>
-            <div class="col-sm-4 mt-3">
-                <button type="button" class="btn btn-danger btn-block">Delete</button>
-            </div>
-        </div>  
+            <!-- button section -->
+            <div class="row mt-4">
+                <div class="col-sm-4 mt-3">
+                    <button type="submit" class="btn light-blue-button btn-block">Save</button>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <button type="submit" class="btn btn-primary btn-block">Update</button>
+                </div>
+                <div class="col-sm-4 mt-3">
+                    <button type="button" class="btn btn-danger btn-block">Delete</button>
+                </div>
+            </div> 
+        </form> 
     </div>
 </body>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
